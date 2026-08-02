@@ -4,7 +4,7 @@
 */
 window.SITE_CONFIG = {
   discordUrl: "https://discord.gg/upX4CP996R",
-  paypalMeName: "italiaroleplay",
+  paypalMeName: "italiaroleplay2026",
   currency: "EUR",
   brandName: "Italia RP"
 };
