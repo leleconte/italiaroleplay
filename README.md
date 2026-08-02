@@ -1,47 +1,72 @@
-# Italia RP — sito ufficiale
+# Italia RP — sito completo
 
-Sito statico responsive per un server FiveM Roleplay, con Home, Shop, Regolamento e collegamento Discord.
+Sito statico completo per il server FiveM **Italia RP**.
 
-## Discord
+## Già configurato
 
-Il link è già configurato in `assets/js/config.js`:
+- Nome progetto: **Italia RP**
+- Discord: `https://discord.gg/upX4CP996R`
+- PayPal.Me: `https://paypal.me/italiaroleplay`
+- Valuta: EUR
+- Shop completo con Pack Case, VIP, attività e fazioni
+- Checkout personalizzato PayPal.Me
+- Codice richiesta univoco per ogni ordine
+- Testo del ticket copiabile
+- Pagina regolamento predisposta e lasciata vuota
+- Grafica responsive per desktop, tablet e telefono
+- Pagina 404
 
-`https://discord.gg/upX4CP996R`
+## Come pubblicarlo
 
-## Attivare PayPal
+Carica **tutti i file e tutte le cartelle** contenuti in questa cartella nella cartella pubblica del tuo hosting, per esempio:
 
-Apri `assets/js/config.js` e inserisci il Client ID pubblico PayPal:
+- `public_html`
+- `www`
+- `htdocs`
+- root del progetto su Netlify, GitHub Pages o Cloudflare Pages
 
-```js
-paypalClientId: "IL_TUO_CLIENT_ID_PUBBLICO"
-```
+La pagina iniziale è `index.html`.
 
-Non inserire mai il Client Secret nel codice del sito.
+## Pagamenti
 
-### Pagamenti singoli
+I pulsanti generano link come:
 
-Appartamenti, case, ville, attività e fazioni usano automaticamente i PayPal Smart Buttons non appena viene inserito il Client ID.
+`https://paypal.me/italiaroleplay/14.99EUR`
 
-### Abbonamenti VIP ogni 30 giorni
+PayPal.Me non comunica automaticamente l'esito al sito. Dopo il pagamento, il cliente deve aprire un ticket Discord e inviare ricevuta e ID transazione. Il checkout prepara automaticamente i dati da copiare.
 
-Per ogni VIP crea un piano mensile nella dashboard PayPal e inserisci il relativo Plan ID in `assets/js/shop-data.js`:
+## Modificare prodotti e prezzi
 
-```js
-paypalPlanId: "P-XXXXXXXXXXXX"
-```
-
-Finché il Plan ID non viene inserito, la card mostra il pulsante per acquistare o richiedere assistenza tramite Discord.
-
-### Proprietà Custom
-
-La Proprietà Custom parte da 79,99 € e usa il pulsante “Richiedi preventivo”, perché il prezzo finale deve essere concordato con lo staff.
-
-## Modificare il catalogo
-
-Tutti i prodotti, prezzi, descrizioni e vantaggi sono in:
+Apri:
 
 `assets/js/shop-data.js`
 
-## Pubblicazione
+## Modificare Discord o PayPal.Me
 
-Carica l’intera cartella `italia-rp-site` sul tuo hosting oppure su GitHub Pages, Netlify o Cloudflare Pages.
+Apri:
+
+`assets/js/config.js`
+
+Configurazione già presente:
+
+```js
+window.SITE_CONFIG = {
+  discordUrl: "https://discord.gg/upX4CP996R",
+  paypalMeName: "italiaroleplay",
+  currency: "EUR",
+  brandName: "Italia RP"
+};
+```
+
+## File principali
+
+- `index.html`: home
+- `shop.html`: shop
+- `regolamento.html`: regolamento
+- `discord.html`: pagina Discord
+- `404.html`: errore 404
+- `assets/css/style.css`: grafica completa
+- `assets/js/main.js`: menu, animazioni e link
+- `assets/js/shop.js`: checkout PayPal.Me
+- `assets/js/shop-data.js`: catalogo
+- `assets/img/`: logo e favicon

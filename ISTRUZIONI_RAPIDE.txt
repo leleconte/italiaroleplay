@@ -1,0 +1,29 @@
+ITALIA RP — INSTALLAZIONE RAPIDA
+
+1. Estrai il file ZIP.
+2. Apri la cartella ITALIA-RP-SITO-COMPLETO.
+3. Carica TUTTO il contenuto sul tuo hosting.
+4. Non rinominare le cartelle assets, css, js o img.
+5. Apri index.html per verificare il sito.
+
+DATI GIA' INSERITI
+Discord: https://discord.gg/upX4CP996R
+PayPal.Me: https://paypal.me/italiaroleplay
+
+SHOP GIA' INSERITO
+- Appartamento — 14,99 EUR
+- Casa Premium — 29,99 EUR
+- Villa Luxury — 49,99 EUR
+- Proprietà Custom — da 79,99 EUR
+- VIP Cittadino — 7,99 EUR / 30 giorni
+- VIP Premium — 14,99 EUR / 30 giorni
+- Il Pagante — 30 EUR
+- Roma Romantica — 30 EUR
+- ACI — 30 EUR
+- AutoRoma — 30 EUR
+- Carabinieri — 30 EUR
+- Guardia di Finanza — 30 EUR
+- Polizia di Stato — 30 EUR
+
+NOTA
+PayPal.Me non verifica automaticamente il pagamento. Il cliente deve aprire un ticket Discord con ricevuta e ID transazione.
